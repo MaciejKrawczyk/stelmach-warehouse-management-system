@@ -29,7 +29,7 @@
               "description": "Przeglądaj stanowiska i przedmioty do nich przypisane",
               "icon": "move",
               "alt": "transfer",
-              "url": "/"
+              "url": "/item-magazine"
             }
           ]
         },
@@ -43,7 +43,7 @@
               "description": "Przenoś narzędzia między stanowiskami",
               "icon": "move",
               "alt": "transfer",
-              "url": "/move"
+              "url": "/item-magazine/move"
             },
             {
               "id": 2,
@@ -51,7 +51,7 @@
               "description": "Dodaj kategorie, przenoś, dodawaj, usuwaj narzędzia",
               "icon": "shelf",
               "alt": "szuflada",
-              "url": "/cabinet"
+              "url": "/item-magazine/cabinet"
             },
             {
               "id": 5,
@@ -59,7 +59,7 @@
               "description": "Przeglądaj i zarządzaj zamówieniami",
               "icon": "tool",
               "alt": "tool",
-              "url": "/orders"
+              "url": "/item-magazine/orders"
             },
             {
               "id": 6,
@@ -67,7 +67,7 @@
               "description": "Wysyłaj przedmioty do do firm",
               "icon": "tool",
               "alt": "tool",
-              "url": "/sharpening"
+              "url": "/item-magazine/sharpening"
             },
             {
               "id": 7,
@@ -75,10 +75,10 @@
               "description": "Przenieś przedmiot do paczki do wysłania",
               "icon": "move",
               "alt": "transfer",
-              "url": "/move-sharpening"
+              "url": "/item-magazine/move-sharpening"
             }
           ],
-          "url": "/"
+          "url": "/item-magazine"
         },
         {
           "id": 3,
@@ -90,7 +90,7 @@
               "description": "Dodaj nową firmę (np. producenta, firme, która ostrzy itd.)",
               "icon": "producer",
               "alt": "producent",
-              "url": "/create/company"
+              "url": "/item-magazine/create/company"
             },
             {
               "id": 2,
@@ -98,7 +98,7 @@
               "description": "Dodaj nowy przedmiot",
               "icon": "tool",
               "alt": "przedmiot",
-              "url": "/create/item"
+              "url": "/item-magazine/create/item"
             },
             {
               "id": 3,
@@ -106,7 +106,7 @@
               "description": "Dodaj nowy typ przedmiotów",
               "icon": "type",
               "alt": "typ",
-              "url": "/create/item-type"
+              "url": "/item-magazine/create/item-type"
             },
             {
               "id": 4,
@@ -114,7 +114,7 @@
               "description": "Dodaj przedmioty, które będą przypięte do zamówienia",
               "icon": "tool",
               "alt": "tool",
-              "url": "/create/order"
+              "url": "/item-magazine/create/order"
             },
             {
               "id": 5,
@@ -122,7 +122,7 @@
               "description": "Dodaj kategorię szuflad dla łatwiejszego segregowania",
               "icon": "type",
               "alt": "typ",
-              "url": "/create/shelf-category"
+              "url": "/item-magazine/create/shelf-category"
             },
             {
               "id": 6,
@@ -130,7 +130,7 @@
               "description": "Dodaj zamówienie, do którego będziesz mógł dodać zamówione przedmioty",
               "icon": "type",
               "alt": "typ",
-              "url": "/create/order-category"
+              "url": "/item-magazine/create/order-category"
             },
             {
               "id": 7,
@@ -138,10 +138,10 @@
               "description": "Dodaj wysyłkę, do którego będziesz mógł dodać przedmioty do wysyłki",
               "icon": "type",
               "alt": "typ",
-              "url": "/create/parcel"
+              "url": "/item-magazine/create/parcel"
             }
           ],
-          "url": "/"
+          "url": "/item-magazine"
         }
       ]
     }

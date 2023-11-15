@@ -5,13 +5,13 @@ import axios, {AxiosResponse} from "axios";
 import Image from "next/image";
 import loadingSVG from "@/public/Dual Ring-1.5s-191px.svg";
 import tool from '@/public/small-tool.svg'
-import SubmitButton from "@/src/components/submitButton";
 import Link from "next/link";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
-import MoveItemForm from "@/src/components/MoveItemForm";
-import {useShelfCategories} from "@/src/hooks/useShelfCategories";
-import {useShelves} from "@/src/hooks/useShelves";
-import {useItems} from "@/src/hooks/useItems";
+import {useItems} from "@/src/frontend/hooks/itemsMagazine/useItems";
+import {useShelves} from "@/src/frontend/hooks/itemsMagazine/useShelves";
+import {useShelfCategories} from "@/src/frontend/hooks/itemsMagazine/useShelfCategories";
+import SuccessModal from "@/src/frontend/components/itemsMagazine/form/modal/SuccessModal";
+import SubmitButton from "@/src/frontend/components/itemsMagazine/submitButton";
+import MoveItemForm from "@/src/frontend/components/itemsMagazine/MoveItemForm";
 
 type ModalPosition = { x: number; y: number; };
 type Shelf = IDbResponseShelf;

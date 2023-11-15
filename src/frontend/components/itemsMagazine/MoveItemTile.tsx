@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import info from "@/public/Info_alt_light.svg";
-import scan from "@/public/Scan_alt_2.svg";
-import user from "@/public/Company.svg";
-import meatballs from "@/public/Meatballs_menu.svg";
+import info from "../../../../public/Info_alt_light.svg";
+import scan from "../../../../public/Scan_alt_2.svg";
+import user from "../../../../public/Company.svg";
+import meatballs from "../../../../public/Meatballs_menu.svg";
 
 const MoveItemTile = ({ itemType, name, company, description, attributes, ...props }) => {
     // State to control the visibility of the info box

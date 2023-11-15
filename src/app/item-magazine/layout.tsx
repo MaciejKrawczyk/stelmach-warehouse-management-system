@@ -1,5 +1,6 @@
 import React from 'react'
-import Navbar from "@/frontend/components/Navbar";
+import Navbar from "@/frontend/components/itemsMagazine/Navbar";
+// import '../globals.css'
 
 export default function ItemMagazineLayout({
                                           children,

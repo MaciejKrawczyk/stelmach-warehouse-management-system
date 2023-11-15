@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import TextInput from "@/src/components/form/TextInput";
-import InputDivider from "@/src/components/form/InputDivider";
-import TextAreaInput from "@/src/components/form/TextAreaInput";
-import SubmitButton from "@/src/components/form/SubmitButton";
-import {ICompany, CompanySchema} from "@/src/types/zod/Company";
-import ToastNotification from "@/src/components/form/notification/ToastNotification";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
 import {FieldValues, useForm} from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
-import FormEnding from "@/src/components/form/FormEnding";
+import InputDivider from "@/frontend/components/itemsMagazine/form/InputDivider";
+import {CompanySchema, ICompany} from "@/lib/types/zod/Company";
+import TextInput from "@/frontend/components/itemsMagazine/form/TextInput";
+import TextAreaInput from "@/frontend/components/itemsMagazine/form/TextAreaInput";
+import FormEnding from "@/frontend/components/itemsMagazine/form/FormEnding";
+import SubmitButton from "@/frontend/components/itemsMagazine/form/SubmitButton";
+import ToastNotification from "@/frontend/components/itemsMagazine/form/notification/ToastNotification";
+import SuccessModal from "@/frontend/components/itemsMagazine/form/modal/SuccessModal";
+
 
 const CompanyForm = () => {
 

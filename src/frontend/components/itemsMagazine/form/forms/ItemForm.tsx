@@ -1,26 +1,13 @@
 'use client'
 
 import React, {useState} from 'react';
-import TextInput from "@/src/components/form/TextInput";
-import InputDivider from "@/src/components/form/InputDivider";
-import TextAreaInput from "@/src/components/form/TextAreaInput";
-import SubmitButton from "@/src/components/form/SubmitButton";
-import ToastNotification from "@/src/components/form/notification/ToastNotification";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
-import SelectInput from "@/src/components/form/SelectInput";
-import {Places} from "@/src/objects/Places";
 import Image from "next/image";
-import shelfSmall from "@/public/shelfSmall.svg";
-import shelfBig from "@/public/shelfBig.svg";
-import {useCompanies} from "@/src/hooks/useCompanies";
-import {useShelfCategories} from "@/src/hooks/useShelfCategories";
+import shelfSmall from "../../../../../../public/shelfSmall.svg";
+import shelfBig from "../../../../../../public/shelfBig.svg";
 import { FormProvider, useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
-import {IItem, ItemSchema} from "@/src/types/zod/Item";
-import ItemTypeAttributesInput from "@/src/components/form/ItemTypeAttributesInput";
-import {sortTool} from "@/src/utils/sortToolShelf";
 import axios from "axios";
-import FormEnding from "@/src/components/form/FormEnding";
+
 
 const ItemForm = () => {
 

@@ -1,23 +1,24 @@
 'use client'
 
 import React, {useState} from 'react';
-import InputDivider from "@/src/components/form/InputDivider";
-import TextAreaInput from "@/src/components/form/TextAreaInput";
-import SubmitButton from "@/src/components/form/SubmitButton";
-import ToastNotification from "@/src/components/form/notification/ToastNotification";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
-import SelectInput from "@/src/components/form/SelectInput";
-import NumberInput from "@/src/components/form/NumberInput";
-import ItemTypeAttributesInput from "@/src/components/form/ItemTypeAttributesInput";
-import {Places} from "@/src/objects/Places";
-import {useCompanies} from "@/src/hooks/useCompanies";
 import {FormProvider, useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
-import {useOrderCategories} from "@/src/hooks/useOrderCategories";
-import {OrderSchema, IOrder} from "@/src/types/zod/Order";
-import FormEnding from "@/src/components/form/FormEnding";
 import axios from "axios";
-import {generateRandomUUID} from "@/src/utils/generateRandomUUID";
+import {useCompanies} from "@/frontend/hooks/itemsMagazine/useCompanies";
+import {useOrderCategories} from "@/frontend/hooks/itemsMagazine/useOrderCategories";
+import {Places} from "@/lib/objects/Places";
+import {IOrder, OrderSchema} from "@/lib/types/zod/Order";
+import {generateRandomUUID} from "@/lib/utils/generateRandomUUID";
+import SelectInput from "@/frontend/components/itemsMagazine/form/SelectInput";
+import InputDivider from "@/frontend/components/itemsMagazine/form/InputDivider";
+import NumberInput from "@/frontend/components/itemsMagazine/form/NumberInput";
+import TextAreaInput from "@/frontend/components/itemsMagazine/form/TextAreaInput";
+import ItemTypeAttributesInput from "@/frontend/components/itemsMagazine/form/ItemTypeAttributesInput";
+import FormEnding from "@/frontend/components/itemsMagazine/form/FormEnding";
+import SubmitButton from "@/frontend/components/itemsMagazine/form/SubmitButton";
+import ToastNotification from "@/frontend/components/itemsMagazine/form/notification/ToastNotification";
+import SuccessModal from "@/frontend/components/itemsMagazine/form/modal/SuccessModal";
+
 
 const OrderForm = () => {
 

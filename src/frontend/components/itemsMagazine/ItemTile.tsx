@@ -1,20 +1,20 @@
 'use client'
 
 import Image from "next/image";
-import info from "../../../public/Info_alt_light.svg";
-import scan from "../../../public/Scan_alt_2.svg";
-import user from "../../../public/Company.svg";
-import dateIcon from "../../../public/date.svg";
-import boxClosed from "../../../public/Box_alt.svg";
-import boxOpen from "../../../public/Box_open.svg";
+import info from "../../../../public/Info_alt_light.svg";
+import scan from "../../../../public/Scan_alt_2.svg";
+import user from "../../../../public/Company.svg";
+import dateIcon from "../../../../public/date.svg";
+import boxClosed from "../../../../public/Box_alt.svg";
+import boxOpen from "../../../../public/Box_open.svg";
 import Link from "next/link";
-import meatballs from "../../../public/Meatballs_menu.svg";
-import edit from "../../../public/Edit_light.svg";
-import change from "../../../public/Horizontal_down_right_main_light.svg";
-// import trash from "@/public/Trash_light.svg";
+import meatballs from "../../../../public/Meatballs_menu.svg";
+import edit from "../../../../public/Edit_light.svg";
+import change from "../../../../public/Horizontal_down_right_main_light.svg";
+import trash from "../../../../public/Trash_light.svg";
 import React, {useEffect, useRef, useState} from "react";
-import ItemTileModal from "@/frontend/components/ItemTileModal";
-import arrow from '../../../public/arrow.svg'
+import ItemTileModal from "@/frontend/components/itemsMagazine/ItemTileModal";
+import arrow from '../../../../public/arrow.svg'
 import {formatDate} from "@/lib/utils/formatDate";
 import {useRouter} from "next/navigation";
 

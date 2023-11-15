@@ -1,15 +1,15 @@
 'use client'
 
 import Image from "next/image";
-import info from "@/public/Info_alt_light.svg";
-import scan from "@/public/Scan_alt_2.svg";
-import user from "@/public/Company.svg";
-import dateIcon from "@/public/date.svg";
+import info from "../../../../public/Info_alt_light.svg";
+import scan from "../../../../public/Scan_alt_2.svg";
+import user from "../../../../public/Company.svg";
+import dateIcon from "../../../../public/date.svg";
 import React, {useEffect, useRef, useState} from "react";
-import {formatDate} from "@/src/utils/formatDate";
 import {useRouter} from "next/navigation";
-import arrow from '@/public/arrow-up-from-bracket-svgrepo-com.svg'
-import MoveItemForm from "@/src/components/MoveItemForm";
+import arrow from '../../../../public/arrow-up-from-bracket-svgrepo-com.svg'
+import MoveItemForm from "@/frontend/components/itemsMagazine/MoveItemForm";
+import {formatDate} from "@/lib/utils/formatDate";
 
 
 const ItemTile = ({placeId, itemType, name, company, date, shelfSize, shelfId, itemId, orderCategoryColor}) => {

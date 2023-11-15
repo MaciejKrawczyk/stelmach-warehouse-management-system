@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
-import TextInput from "@/src/components/form/TextInput";
-import InputDivider from "@/src/components/form/InputDivider";
-import ColorPickerInput from "@/src/components/form/ColorPickerInput";
-import TextAreaInput from "@/src/components/form/TextAreaInput";
-import SubmitButton from "@/src/components/form/SubmitButton";
-import ToastNotification from "@/src/components/form/notification/ToastNotification";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
-import {IShelfCategory, ShelfCategorySchema} from "@/src/types/zod/Shelf";
+
 import {FieldValues, useForm} from "react-hook-form";
-import {zodResolver} from "@hookform/resolvers/zod";
+
 import axios from "axios";
-import FormEnding from "@/src/components/form/FormEnding";
+import {IShelfCategory, ShelfCategorySchema} from "@/lib/types/zod/Shelf";
+import TextInput from "@/frontend/components/itemsMagazine/form/TextInput";
+import ColorPickerInput from "@/frontend/components/itemsMagazine/form/ColorPickerInput";
+import InputDivider from "@/frontend/components/itemsMagazine/form/InputDivider";
+import TextAreaInput from "@/frontend/components/itemsMagazine/form/TextAreaInput";
+import FormEnding from "@/frontend/components/itemsMagazine/form/FormEnding";
+import SuccessModal from "@/frontend/components/itemsMagazine/form/modal/SuccessModal";
+import ToastNotification from "@/frontend/components/itemsMagazine/form/notification/ToastNotification";
+import SubmitButton from "@/frontend/components/itemsMagazine/form/SubmitButton";
+import {zodResolver} from "@hookform/resolvers/zod";
+
+
 
 
 const ShelfCategoryForm = () => {

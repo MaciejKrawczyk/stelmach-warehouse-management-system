@@ -16,16 +16,21 @@
     "production:build": "npx prisma generate && npx prisma migrate deploy && next build"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
     "@prisma/client": "^5.6.0",
     "@tanstack/react-query": "^4.36.1",
     "@trpc/client": "^10.43.3",
     "@trpc/react-query": "^10.43.3",
     "@trpc/server": "^10.43.3",
+    "axios": "^1.6.2",
     "dotenv-cli": "^7.3.0",
     "next": "14.0.2",
     "react": "^18",
+    "react-colorful": "^5.6.1",
     "react-dom": "^18",
     "react-draggable": "^4.4.6",
+    "react-hook-form": "^7.48.2",
+    "tailwindcss": "^3.3.3",
     "zod": "^3.22.4"
   },
   "devDependencies": {
@@ -37,7 +42,6 @@
     "eslint-config-next": "14.0.2",
     "postcss": "^8",
     "prisma": "^5.6.0",
-    "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
 }

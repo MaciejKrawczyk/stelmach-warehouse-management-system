@@ -1,14 +1,15 @@
 'use client'
 
 import React, {useState} from "react";
-import {Places} from "@/src/objects/Places";
 import {useParams, useRouter} from "next/navigation";
-import LinkModal from "@/src/components/LinkModal";
-import SubmitButton from "@/src/components/submitButton";
 import axios from "axios";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
-import config from "@/config.json";
-import SuccessModalWithoutAnimation from "@/src/components/SuccessModalWithoutAnimation";
+import SuccessModalWithoutAnimation from "@/frontend/components/itemsMagazine/SuccessModalWithoutAnimation";
+import {id} from "postcss-selector-parser";
+import LinkModal from "@/frontend/components/itemsMagazine/LinkModal";
+import {Places} from "@/lib/objects/Places";
+import SubmitButton from "@/frontend/components/itemsMagazine/submitButton";
+import config from "@/app/item-magazine/config.json";
+
 
 
 const InsertItemForm = ({ shelfId }) => {

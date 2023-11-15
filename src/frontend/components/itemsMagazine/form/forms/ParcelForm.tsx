@@ -1,22 +1,23 @@
 'use client'
 
 import React, {useState} from 'react';
-import TextInput from "@/src/components/form/TextInput";
-import InputDivider from "@/src/components/form/InputDivider";
-import TextAreaInput from "@/src/components/form/TextAreaInput";
-import SubmitButton from "@/src/components/form/SubmitButton";
-import ColorPickerInput from "@/src/components/form/ColorPickerInput";
-import SelectInput from "@/src/components/form/SelectInput";
-import ToastNotification from "@/src/components/form/notification/ToastNotification";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
 import {FieldValues, useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
-import {IParcel, ParcelSchema} from "@/src/types/zod/Parcel";
-import {useCompanies} from "@/src/hooks/useCompanies";
 import Image from "next/image";
-import loadingSVG from "@/public/Dual Ring-1.5s-191px.svg";
+import loadingSVG from "../../../../../../public/Dual Ring-1.5s-191px.svg";
 import axios from "axios";
-import FormEnding from "@/src/components/form/FormEnding";
+import {IParcel, ParcelSchema} from "@/lib/types/zod/Parcel";
+import {useCompanies} from "@/frontend/hooks/itemsMagazine/useCompanies";
+import TextInput from "@/frontend/components/itemsMagazine/form/TextInput";
+import InputDivider from "@/frontend/components/itemsMagazine/form/InputDivider";
+import ColorPickerInput from "@/frontend/components/itemsMagazine/form/ColorPickerInput";
+import SelectInput from "@/frontend/components/itemsMagazine/form/SelectInput";
+import TextAreaInput from "@/frontend/components/itemsMagazine/form/TextAreaInput";
+import FormEnding from "@/frontend/components/itemsMagazine/form/FormEnding";
+import SubmitButton from "@/frontend/components/itemsMagazine/form/SubmitButton";
+import ToastNotification from "@/frontend/components/itemsMagazine/form/notification/ToastNotification";
+import SuccessModal from "@/frontend/components/itemsMagazine/form/modal/SuccessModal";
+
 
 
 const ParcelForm = () => {

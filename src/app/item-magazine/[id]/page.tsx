@@ -3,9 +3,10 @@
 import {useParams} from "next/navigation";
 import React from "react";
 import Image from "next/image";
-import loadingSVG from "@/public/Dual Ring-1.5s-191px.svg";
-import {formatDateToObject} from "@/src/utils/formatDate";
-import {useItem} from "@/src/hooks/useItem";
+import loadingSVG from "../../../../public/Dual Ring-1.5s-191px.svg";
+import {useItem} from "@/frontend/hooks/itemsMagazine/useItem";
+import {formatDateToObject} from "@/lib/utils/formatDate";
+
 
 const Page = () => {
 

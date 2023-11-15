@@ -7,8 +7,8 @@ import pin from '../../../public/place-marker-svgrepo-com 1.svg';
 import settings from '../../../public/Setting_alt_line.svg';
 import { Places } from "@/lib/objects/Places"
 import loadingSVG from "../../../public/Dual Ring-1.5s-191px.svg";
-import ItemTile from "@/frontend/components/ItemTile";
-import {useItems} from "@/frontend/hooks/useItems";
+import ItemTile from "@/frontend/components/itemsMagazine/ItemTile";
+import {useItems} from "@/frontend/hooks/itemsMagazine/useItems";
 
 export default function Home() {
 
