@@ -1,0 +1,171 @@
+{
+  "ui": {
+    "successModal": {
+      "messages": {
+        "company": {
+          "bigText": "Dodano firmę",
+          "smallText": "Firma została dodana pomyślnie do bazy danych"
+        },
+        "item": {
+          "bigText": "Dodano przedmiot",
+          "smallText": "Przedmiot został dodany pomyślnie do magazynu"
+        },
+        "itemType": {
+          "bigText": "Dodano typ przedmiotów",
+          "smallText": "Typ przedmiotów został dodany pomyślnie do bazy danych"
+        }
+      }
+    },
+
+    "navbar": {
+      "links": [
+        {
+          "id": 1,
+          "name": "Przeglądaj",
+          "expandable": [
+            {
+              "id": 1,
+              "name": "Stanowiska",
+              "description": "Przeglądaj stanowiska i przedmioty do nich przypisane",
+              "icon": "move",
+              "alt": "transfer",
+              "url": "/"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Zarządzaj",
+          "expandable": [
+            {
+              "id": 1,
+              "name": "Przenieś narzędzia",
+              "description": "Przenoś narzędzia między stanowiskami",
+              "icon": "move",
+              "alt": "transfer",
+              "url": "/move"
+            },
+            {
+              "id": 2,
+              "name": "Zarządzaj szafą",
+              "description": "Dodaj kategorie, przenoś, dodawaj, usuwaj narzędzia",
+              "icon": "shelf",
+              "alt": "szuflada",
+              "url": "/cabinet"
+            },
+            {
+              "id": 5,
+              "name": "Zarządzaj zamówieniami",
+              "description": "Przeglądaj i zarządzaj zamówieniami",
+              "icon": "tool",
+              "alt": "tool",
+              "url": "/orders"
+            },
+            {
+              "id": 6,
+              "name": "Zarządzaj paczkami do wysyłki",
+              "description": "Wysyłaj przedmioty do do firm",
+              "icon": "tool",
+              "alt": "tool",
+              "url": "/sharpening"
+            },
+            {
+              "id": 7,
+              "name": "Dodaj do wysyłki",
+              "description": "Przenieś przedmiot do paczki do wysłania",
+              "icon": "move",
+              "alt": "transfer",
+              "url": "/move-sharpening"
+            }
+          ],
+          "url": "/"
+        },
+        {
+          "id": 3,
+          "name": "Dodaj",
+          "expandable": [
+            {
+              "id": 1,
+              "name": "Dodaj firmę",
+              "description": "Dodaj nową firmę (np. producenta, firme, która ostrzy itd.)",
+              "icon": "producer",
+              "alt": "producent",
+              "url": "/create/company"
+            },
+            {
+              "id": 2,
+              "name": "Dodaj przedmiot",
+              "description": "Dodaj nowy przedmiot",
+              "icon": "tool",
+              "alt": "przedmiot",
+              "url": "/create/item"
+            },
+            {
+              "id": 3,
+              "name": "Dodaj typ przedmiotów",
+              "description": "Dodaj nowy typ przedmiotów",
+              "icon": "type",
+              "alt": "typ",
+              "url": "/create/item-type"
+            },
+            {
+              "id": 4,
+              "name": "Dodaj przedmiot do zamówienia",
+              "description": "Dodaj przedmioty, które będą przypięte do zamówienia",
+              "icon": "tool",
+              "alt": "tool",
+              "url": "/create/order"
+            },
+            {
+              "id": 5,
+              "name": "Dodaj kategorię szuflad",
+              "description": "Dodaj kategorię szuflad dla łatwiejszego segregowania",
+              "icon": "type",
+              "alt": "typ",
+              "url": "/create/shelf-category"
+            },
+            {
+              "id": 6,
+              "name": "Dodaj zamówienie",
+              "description": "Dodaj zamówienie, do którego będziesz mógł dodać zamówione przedmioty",
+              "icon": "type",
+              "alt": "typ",
+              "url": "/create/order-category"
+            },
+            {
+              "id": 7,
+              "name": "Dodaj paczkę do wysłania",
+              "description": "Dodaj wysyłkę, do którego będziesz mógł dodać przedmioty do wysyłki",
+              "icon": "type",
+              "alt": "typ",
+              "url": "/create/parcel"
+            }
+          ],
+          "url": "/"
+        }
+      ]
+    }
+  },
+
+  "program": {
+    "messages": {
+      "actions": {
+        "createItem": {
+          "actionName": "DODANIE",
+          "description": "Dodano nowy przedmiot do magazynu",
+          "description2": ""
+        },
+        "createOrder": {
+          "actionName": "ZAMÓWIENIE",
+          "description": "Dodano nowe zamówienie na przedmioty",
+          "description2": ""
+        },
+        "moveItem": {
+          "actionName": "Przeniesienie",
+          "description1": "Przeniesiono z ",
+          "description2": " do "
+        }
+      }
+    }
+  }
+}
