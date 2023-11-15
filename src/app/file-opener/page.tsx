@@ -1,7 +1,8 @@
 'use client'
 
 import React, { useState } from 'react';
-import Draggable from 'react-draggable'; // import the Draggable component
+import Draggable from 'react-draggable';
+import MenuButton from "@/src/frontend/components/MenuButton"; // import the Draggable component
 
 export default function pdfPage() {
   const [inputValue, setInputValue] = useState('');
@@ -17,6 +18,9 @@ export default function pdfPage() {
   
   return (
     <div className={'overflow-hidden overflow-x-hidden'}>
+      
+      <MenuButton />
+      
       {/* Draggable Wrapper */}
       <Draggable defaultClassName={'absolute z-20'}>
         <div> {/* Wrapper div */}

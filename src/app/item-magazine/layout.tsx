@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from "@/src/frontend/components/itemsMagazine/Navbar"
+import MenuButton from "@/src/frontend/components/MenuButton";
 
 
 export default function ItemMagazineLayout({
@@ -11,6 +12,7 @@ export default function ItemMagazineLayout({
     <div>
       <Navbar />
       {children}
+      <MenuButton />
     </div>
   )
 }
