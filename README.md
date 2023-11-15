@@ -1,59 +1,30 @@
-<div align="center">
 
+<div align="center">
 
 🚧 **Under Construction** 🚧
 
 This repository is still a work in progress.
 
-   <h1>Item Magazine 🛠️</h1>
+   <h1>Item Magazine and other power tools 🛠️</h1>
    <img src="examples/logo.png" alt="">
   <hr />
 </div>
 
-Welcome to the Item Magazine - a sophisticated, beautifully designed, and innovative digital magazine tool tailored specifically for our company's unique use case. This tool not only performs basic CRUD (Create, Read, Update, Delete) operations but also introduces special behaviors that stand out.
-
-## Screenshots 📸
-
-To give you a glimpse of our intuitive design and functionality, here are some screenshots from our application:
-
-[//]: # (### **Example 4**)
-![Example 4](examples/example4.png)
-
-[//]: # (### **Example 2**)
-![Example 2](examples/example2.png)
-
-[//]: # (### **Example 4**)
-![Example 3](examples/example3.png)
-
-[//]: # (### **Example 1**)
-![Example 1](examples/example1.png)
+Welcome to our multi-functional application, featuring the sophisticated Item Magazine alongside additional powerful tools. This digital suite is not just a simple CRUD (Create, Read, Update, Delete) application but a comprehensive solution encompassing a variety of features for our company's diverse needs.
 
 ## Features 🌟
 
-- **Item Types Creation**: Tailor the magazine to your specific needs by creating distinct types of items.
+- **Item Magazine**: Tailor the tool for specific needs by creating distinct item types, organized in cabinets and shelves, with automatic sorting and categorization for efficient management.
 
-- **Organized Storage**: Items can be neatly placed into magazine cabinets, complete with individual shelves.
+- **PDF Opener for Special Orders**: Handle special orders with ease, thanks to our integrated PDF opener that streamlines the process.
 
-- **Categorized Shelves**: Shelves can be further divided into specific categories for a more refined organization.
+- **Extensive Functionality**: Beyond the magazine, the application offers a wide range of features to cater to our varied operational requirements.
 
-- **Automatic Item Sorting**: Let the program do the heavy lifting! With our automatic item sorting system, you can keep your tools organized without any hassle.
+- **Technology Stack**: Built with Next.js 14 and Prisma, and utilizes tRPC with MVC (Model-View-Controller) pattern for robust, scalable, and efficient application architecture.
 
-- **Company & Packaging**: You can easily add company details and set up packages to be sent.
+- **Highly Configurable**: Adaptable to changing needs and requirements, ensuring seamless integration into our workflow.
 
-- **Highly Configurable**: The app has been designed with flexibility in mind, ensuring it fits perfectly with any changes or requirements.
-
-## Technology Stack 🚀
-
-Harnessing the power of modern technology to provide you with a seamless experience:
-- **Frontend**: Crafted with [Next.js](https://nextjs.org/) (a React framework) combined with TypeScript for type-safe, efficient, and scalable code.
-
-- **Database Management**: Uses [Prisma](https://www.prisma.io/) to ensure a robust and optimized database layer.
-
-- **Form Verification**: Integrates [Zod](https://github.com/colinhacks/zod) with [React Form Hook](https://react-hook-form.com/) to ensure data integrity and user-friendly form interactions.
-
-## Design ✨
-
-Every pixel, every interaction, every animation is meticulously crafted. I've personally designed everything, ensuring not just functionality but also an appealing and intuitive user experience.
+- **Design & User Experience**: Every aspect is designed with attention to detail, ensuring a user-friendly and visually appealing interface.
 
 ## Getting Started 🚀
 
@@ -62,7 +33,7 @@ Every pixel, every interaction, every animation is meticulously crafted. I've pe
    git clone https://github.com/MaciejKrawczyk/stelmach-magazine.git
    ```
 
-2. **Navigate into the directory and install dependencies**:
+2. **Install dependencies and set up**:
    ```bash
    cd stelmach-magazine
    npm install
@@ -73,52 +44,22 @@ Every pixel, every interaction, every animation is meticulously crafted. I've pe
    npm run dev
    ```
 
-Warning!
-Now anytime you need to run a prisma command, you can use the scripts you just added to your package.json file.
-- prisma migrate dev > npm migrate:dev
-- prisma db push > npm db:push
-- prisma migrate reset > npm migrate:reset
-- prisma db seed > npm db:seed
-- prisma generate > npm prisma:generate
-- prisma studio > npm prisma:studio
-
 ## Contribution & Support 🤝
 
-This is an in-house tool for our company. However, any feedback, suggestions, or contributions are always welcome! Please reach out or create an issue/PR in our repository.
+While this is an in-house tool, we welcome feedback, suggestions, and contributions. Feel free to reach out or contribute to our repository.
 
 ## License 📜
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Licensed under the Apache License, Version 2.0.
 
 ## Credits 💼
 
 Designed & Developed by Maciej Krawczyk
 
- --- 
+---
 
-### PIERWSZE URUCHOMIENIE / PO WYCZYSZCZENIU BAZY
-- /api/category => stworzyć domyślną kategorie
-```http request
-http://localhost:3000/api/category POST
-```
-```json
-{
-    "name": "domyślna",
-    "color": "lightgray",
-    "notes": "domyślna"
-}
-```
-- /api/generateShelves => tworzy szuladki
-```http request
-http://localhost:3000/api/generateShelves POST
-```
+### First Time Setup / After Database Reset
+- **Default Category Setup**: Create a default category at `/api/category`.
+- **Shelves Generation**: Automatically generate shelves at `/api/generateShelves`.
+
+</div>

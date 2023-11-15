@@ -58,7 +58,7 @@ const MenuButton: FC<MenuButtonProps> = () => {
         <Modal onConfirm={handleConfirm} onCancel={handleCancel} />
       )}
       
-      <Link href={'/'} onClick={handleOnClick} className={'text-xl text-white flex justify-center items-center fixed rounded-full w-20 h-20 bg-blue-500 font-bold z-50 bottom-5 right-5'}>
+      <Link href={'/'} onClick={handleOnClick} className={'text-xl text-white flex justify-center items-center fixed rounded-full w-20 h-20 bg-blue-500 font-bold z-30 bottom-5 right-5'}>
         <Image className={'w-10 h-10'} src={back} alt={'return to menu'} />
       </Link>
     </>
