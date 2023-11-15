@@ -1,5 +1,6 @@
-import loadingAnimation from '../../../../public/Dual Ring-1.4s-200px.svg'
+import loadingAnimation from '@/public/Dual Ring-1.4s-200px.svg'
 import Image from 'next/image'
+
 
 interface SubmitButtonProps {
     className: string

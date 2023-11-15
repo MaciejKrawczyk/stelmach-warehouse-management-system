@@ -3,12 +3,12 @@
 import React, {useState} from "react";
 import {useParams, useRouter} from "next/navigation";
 import axios from "axios";
-import SuccessModalWithoutAnimation from "@/frontend/components/itemsMagazine/SuccessModalWithoutAnimation";
+import SuccessModalWithoutAnimation from "@/src/frontend/components/itemsMagazine/SuccessModalWithoutAnimation";
 import {id} from "postcss-selector-parser";
-import LinkModal from "@/frontend/components/itemsMagazine/LinkModal";
-import {Places} from "@/lib/objects/Places";
-import SubmitButton from "@/frontend/components/itemsMagazine/submitButton";
-import config from "@/app/item-magazine/config.json";
+import LinkModal from "@/src/frontend/components/itemsMagazine/LinkModal";
+import {Places} from "@/src/lib/objects/Places";
+import SubmitButton from "@/src/frontend/components/itemsMagazine/submitButton";
+import config from "@/src/app/item-magazine/config.json";
 
 
 

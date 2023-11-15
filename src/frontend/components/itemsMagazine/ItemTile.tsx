@@ -13,9 +13,9 @@ import edit from "../../../../public/Edit_light.svg";
 import change from "../../../../public/Horizontal_down_right_main_light.svg";
 import trash from "../../../../public/Trash_light.svg";
 import React, {useEffect, useRef, useState} from "react";
-import ItemTileModal from "@/frontend/components/itemsMagazine/ItemTileModal";
+import ItemTileModal from "@/src/frontend/components/itemsMagazine/ItemTileModal";
 import arrow from '../../../../public/arrow.svg'
-import {formatDate} from "@/lib/utils/formatDate";
+import {formatDate} from "@/src/lib/utils/formatDate";
 import {useRouter} from "next/navigation";
 
 

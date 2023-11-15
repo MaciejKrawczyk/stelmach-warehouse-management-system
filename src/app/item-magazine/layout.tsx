@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "@/src/frontend/components/itemsMagazine/Navbar";
+import Navbar from "@/src/frontend/components/itemsMagazine/Navbar"
 
 
 export default function ItemMagazineLayout({

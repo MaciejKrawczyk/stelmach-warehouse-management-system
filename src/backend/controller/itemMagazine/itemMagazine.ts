@@ -1,5 +1,5 @@
-import {router} from "@/backend/routers/trpc";
-import {todosRouter} from "@/backend/controller/itemMagazine/todos";
+import {router} from "@/src/backend/routers/trpc";
+import {todosRouter} from "@/src/backend/controller/itemMagazine/todos";
 
 export const itemMagazineRouter = router({
   

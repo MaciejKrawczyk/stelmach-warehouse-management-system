@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import pin from '../../../public/place-marker-svgrepo-com 1.svg';
 import settings from '../../../public/Setting_alt_line.svg';
-import { Places } from "@/lib/objects/Places"
+import { Places } from "@/src/lib/objects/Places"
 import loadingSVG from "../../../public/Dual Ring-1.5s-191px.svg";
-import ItemTile from "@/frontend/components/itemsMagazine/ItemTile";
-import {useItems} from "@/frontend/hooks/itemsMagazine/useItems";
+import ItemTile from "@/src/frontend/components/itemsMagazine/ItemTile";
+import {useItems} from "@/src/frontend/hooks/itemsMagazine/useItems";
 
 export default function Home() {
 

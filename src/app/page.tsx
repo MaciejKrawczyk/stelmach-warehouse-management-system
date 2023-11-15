@@ -1,4 +1,4 @@
-import {server} from "@/backend/trpc/server";
+import {server} from "@/src/backend/trpc/server";
 import Link from "next/link";
 
 export default async function Home() {

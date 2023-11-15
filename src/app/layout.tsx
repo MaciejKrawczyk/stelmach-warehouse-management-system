@@ -1,10 +1,10 @@
 import type {Metadata} from 'next'
-import {Inter} from 'next/font/google'
+import { Merriweather_Sans } from 'next/font/google'
 import './globals.css'
-import Provider from "@/backend/trpc/Provider";
+import Provider from "@/src/backend/trpc/Provider";
 import React from 'react'
 
-const inter = Inter({subsets: ['latin']})
+const font = Merriweather_Sans({subsets: ["latin"]})
 
 export const metadata: Metadata = {
   title: 'Stelmach app',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <Provider>
           {children}
         </Provider>

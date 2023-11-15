@@ -1,4 +1,4 @@
-import {db} from "@/src/backend/db/db";
+import {db} from "@/src/backend/model/db";
 import {ICompany} from "@/src/lib/types/zod/Company";
 
 export async function createCompany(company: ICompany) {

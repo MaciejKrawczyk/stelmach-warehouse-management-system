@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../../../../public/SuccessModal.css';
 import { useRouter } from 'next/navigation';
-import Link from "next/link";
-
 
 
 const SuccessModalWithoutAnimation = ({ text, bigText, isOpen, objectData }) => {

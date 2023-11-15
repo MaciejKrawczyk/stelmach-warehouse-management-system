@@ -8,8 +8,8 @@ import dateIcon from "../../../../public/date.svg";
 import React, {useEffect, useRef, useState} from "react";
 import {useRouter} from "next/navigation";
 import arrow from '../../../../public/arrow-up-from-bracket-svgrepo-com.svg'
-import MoveItemForm from "@/frontend/components/itemsMagazine/MoveItemForm";
-import {formatDate} from "@/lib/utils/formatDate";
+import MoveItemForm from "@/src/frontend/components/itemsMagazine/MoveItemForm";
+import {formatDate} from "@/src/lib/utils/formatDate";
 
 
 const ItemTile = ({placeId, itemType, name, company, date, shelfSize, shelfId, itemId, orderCategoryColor}) => {

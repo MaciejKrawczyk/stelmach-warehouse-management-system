@@ -1,5 +1,5 @@
-import {router} from "@/backend/routers/trpc";
-import {itemMagazineRouter} from "@/backend/controller/itemMagazine/itemMagazine";
+import {router} from "@/src/backend/routers/trpc";
+import {itemMagazineRouter} from "@/src/backend/controller/itemMagazine/itemMagazine";
 
 export const appRouter = router({
 

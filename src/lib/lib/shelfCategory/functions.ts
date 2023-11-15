@@ -1,4 +1,4 @@
-import {db} from "@/src/backend/db/db";
+import {db} from "@/src/backend/model/db";
 import {IShelfCategory} from "@/src/lib/types/zod/Shelf";
 
 

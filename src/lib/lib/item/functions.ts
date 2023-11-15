@@ -1,5 +1,5 @@
 import {IItem} from "@/src/lib/types/zod/Item";
-import {db} from "@/src/backend/db/db";
+import {db} from "@/src/backend/model/db";
 
 
 export async function createItem(item: IItem) {
