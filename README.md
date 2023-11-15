@@ -30,12 +30,12 @@ Welcome to our multi-functional application, featuring the sophisticated Item Ma
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/MaciejKrawczyk/stelmach-magazine.git
+   git clone https://github.com/MaciejKrawczyk/stelmach-power-tools.git
    ```
 
 2. **Install dependencies and set up**:
    ```bash
-   cd stelmach-magazine
+   cd stelmach-power-tools
    npm install
    ```
 
