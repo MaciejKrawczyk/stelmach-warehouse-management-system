@@ -1,17 +1,18 @@
 'use client'
 
-import Container from "@/src/components/Container";
 import React, {useEffect, useState} from "react";
-import {useItem} from "@/src/hooks/useItem";
 import {useParams, useRouter} from "next/navigation";
-import SubmitButton from "@/src/components/form/SubmitButton";
 import Image from "next/image";
 import shelfSmall from "@/public/shelfSmall.svg";
 import shelfBig from "@/public/shelfBig.svg";
 import {useForm} from "react-hook-form";
-import ToastNotification from "@/src/components/form/notification/ToastNotification";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
 import axios from "axios";
+import {useItem} from "@/src/frontend/hooks/itemsMagazine/useItem";
+import {Container} from "postcss";
+import ToastNotification from "@/src/frontend/components/itemsMagazine/form/notification/ToastNotification";
+import SuccessModal from "@/src/frontend/components/itemsMagazine/form/modal/SuccessModal";
+import SubmitButton from "@/src/frontend/components/itemsMagazine/submitButton";
+
 
 const Page = () => {
     const params = useParams()

@@ -1,7 +1,9 @@
 'use client'
 
-import Container from "@/src/components/Container";
-import ItemForm from "@/src/components/form/forms/ItemForm";
+
+
+import Container from "@/src/frontend/components/itemsMagazine/Container";
+import ItemForm from "@/src/frontend/components/itemsMagazine/form/forms/ItemForm";
 
 const App = () => {
 

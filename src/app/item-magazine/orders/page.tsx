@@ -1,14 +1,14 @@
 'use client'
 
 import React, {useEffect, useState} from "react";
-import axios from "axios";
 import Image from "next/image";
 import loadingSVG from "@/public/Dual Ring-1.5s-191px.svg";
 import pin from "@/public/place-marker-svgrepo-com 1.svg";
 import settings from "@/public/Setting_alt_line.svg";
-import ItemTile from "@/src/components/ItemTile";
-import {useOrderCategories} from "@/src/hooks/useOrderCategories";
-import {useItems} from "@/src/hooks/useItems";
+import {useItems} from "@/src/frontend/hooks/itemsMagazine/useItems";
+import {useOrderCategories} from "@/src/frontend/hooks/itemsMagazine/useOrderCategories";
+import ItemTile from "@/src/frontend/components/itemsMagazine/ItemTile";
+
 
 const Page = () => {
 

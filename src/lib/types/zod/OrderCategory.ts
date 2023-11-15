@@ -1,5 +1,6 @@
 import { z } from 'zod'
-import {formatCommasToDots} from "@/src/utils/formatCommaToDots";
+import {formatCommasToDots} from "@/src/lib/utils/formatCommaToDots";
+
 
 export const OrderCategorySchema = z.object({
     id: z.number().optional(),

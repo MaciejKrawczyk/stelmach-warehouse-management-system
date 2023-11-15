@@ -1,5 +1,5 @@
-import {db} from '@/src/lib/db/db'
-import {ICompany} from "@/src/types/zod/Company";
+import {db} from "@/src/backend/db/db";
+import {ICompany} from "@/src/lib/types/zod/Company";
 
 export async function createCompany(company: ICompany) {
   const object = await db.company.create({

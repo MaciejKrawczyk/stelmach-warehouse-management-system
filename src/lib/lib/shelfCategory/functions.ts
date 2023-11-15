@@ -1,5 +1,5 @@
-import {db} from '@/src/lib/db/db'
-import {IShelfCategory} from "@/src/types/zod/Shelf";
+import {db} from "@/src/backend/db/db";
+import {IShelfCategory} from "@/src/lib/types/zod/Shelf";
 
 
 export async function findFirstShelfCategory(id: number) {

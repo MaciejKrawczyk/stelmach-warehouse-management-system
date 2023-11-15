@@ -1,5 +1,6 @@
-import {IItem} from "@/src/types/zod/Item";
+
 import axios from "axios";
+import {IItem} from "@/src/lib/types/zod/Item";
 
 export class Item {
     private readonly name: string;

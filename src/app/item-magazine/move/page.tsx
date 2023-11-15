@@ -1,14 +1,14 @@
 'use client'
 
 import React, { useState } from "react";
-import { Places } from "@/src/objects/Places";
 import axios from "axios";
-import MoveItemTile from "@/src/components/MoveItemTile";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
-import SubmitButton from "@/src/components/submitButton";
-import {sortToolExisting} from "@/src/utils/sortToolExisting";
-import {PlaceNameById} from "@/src/utils/PlaceNameById";
-import {useItems} from "@/src/hooks/useItems";
+import {useItems} from "@/src/frontend/hooks/itemsMagazine/useItems";
+import {PlaceNameById} from "@/src/lib/utils/PlaceNameById";
+import {sortToolExisting} from "@/src/lib/utils/sortToolExisting";
+import {Places} from "@/src/lib/objects/Places";
+import MoveItemTile from "@/src/frontend/components/itemsMagazine/MoveItemTile";
+import SubmitButton from "@/src/frontend/components/itemsMagazine/submitButton";
+import SuccessModal from "@/src/frontend/components/itemsMagazine/form/modal/SuccessModal";
 
 const Page = () => {
 

@@ -7,9 +7,9 @@ import loadingSVG from "@/public/Dual Ring-1.5s-191px.svg";
 import pin from "@/public/place-marker-svgrepo-com 1.svg";
 import settings from "@/public/Setting_alt_line.svg";
 import arrow from '@/public/Arrow_right.svg'
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
 import '@/public/SuccessModal.css';
-import ItemTileWithoutOptions from "@/src/components/ItemTileWithoutOptions";
+import ItemTileWithoutOptions from "@/src/frontend/components/itemsMagazine/ItemTileWithoutOptions";
+import SuccessModal from "@/src/frontend/components/itemsMagazine/form/modal/SuccessModal";
 
 const Page: React.FC = () => {
     const [items, setItems] = useState<IDbResponseItem[]>([]);

@@ -3,16 +3,16 @@ import React, { useState } from 'react';
 import {FieldValues, useForm} from "react-hook-form";
 
 import axios from "axios";
-import {IShelfCategory, ShelfCategorySchema} from "@/lib/types/zod/Shelf";
-import TextInput from "@/frontend/components/itemsMagazine/form/TextInput";
-import ColorPickerInput from "@/frontend/components/itemsMagazine/form/ColorPickerInput";
-import InputDivider from "@/frontend/components/itemsMagazine/form/InputDivider";
-import TextAreaInput from "@/frontend/components/itemsMagazine/form/TextAreaInput";
-import FormEnding from "@/frontend/components/itemsMagazine/form/FormEnding";
-import SuccessModal from "@/frontend/components/itemsMagazine/form/modal/SuccessModal";
-import ToastNotification from "@/frontend/components/itemsMagazine/form/notification/ToastNotification";
-import SubmitButton from "@/frontend/components/itemsMagazine/form/SubmitButton";
 import {zodResolver} from "@hookform/resolvers/zod";
+import TextInput from "@/src/frontend/components/itemsMagazine/form/TextInput";
+import {IShelfCategory, ShelfCategorySchema} from "@/src/lib/types/zod/Shelf";
+import InputDivider from "@/src/frontend/components/itemsMagazine/form/InputDivider";
+import ColorPickerInput from "@/src/frontend/components/itemsMagazine/form/ColorPickerInput";
+import TextAreaInput from "@/src/frontend/components/itemsMagazine/form/TextAreaInput";
+import FormEnding from "@/src/frontend/components/itemsMagazine/form/FormEnding";
+import SubmitButton from "@/src/frontend/components/itemsMagazine/form/SubmitButton";
+import ToastNotification from "@/src/frontend/components/itemsMagazine/form/notification/ToastNotification";
+import SuccessModal from "@/src/frontend/components/itemsMagazine/form/modal/SuccessModal";
 
 
 

@@ -4,20 +4,21 @@ import React, {useState} from 'react';
 import {FormProvider, useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 import axios from "axios";
-import {useCompanies} from "@/frontend/hooks/itemsMagazine/useCompanies";
-import {useOrderCategories} from "@/frontend/hooks/itemsMagazine/useOrderCategories";
-import {Places} from "@/lib/objects/Places";
-import {IOrder, OrderSchema} from "@/lib/types/zod/Order";
-import {generateRandomUUID} from "@/lib/utils/generateRandomUUID";
-import SelectInput from "@/frontend/components/itemsMagazine/form/SelectInput";
-import InputDivider from "@/frontend/components/itemsMagazine/form/InputDivider";
-import NumberInput from "@/frontend/components/itemsMagazine/form/NumberInput";
-import TextAreaInput from "@/frontend/components/itemsMagazine/form/TextAreaInput";
-import ItemTypeAttributesInput from "@/frontend/components/itemsMagazine/form/ItemTypeAttributesInput";
-import FormEnding from "@/frontend/components/itemsMagazine/form/FormEnding";
-import SubmitButton from "@/frontend/components/itemsMagazine/form/SubmitButton";
-import ToastNotification from "@/frontend/components/itemsMagazine/form/notification/ToastNotification";
-import SuccessModal from "@/frontend/components/itemsMagazine/form/modal/SuccessModal";
+import SelectInput from "@/src/frontend/components/itemsMagazine/form/SelectInput";
+import {useCompanies} from "@/src/frontend/hooks/itemsMagazine/useCompanies";
+import {useOrderCategories} from "@/src/frontend/hooks/itemsMagazine/useOrderCategories";
+import {Places} from "@/src/lib/objects/Places";
+import {IOrder, OrderSchema} from "@/src/lib/types/zod/Order";
+import {generateRandomUUID} from "@/src/lib/utils/generateRandomUUID";
+import InputDivider from "@/src/frontend/components/itemsMagazine/form/InputDivider";
+import NumberInput from "@/src/frontend/components/itemsMagazine/form/NumberInput";
+import TextAreaInput from "@/src/frontend/components/itemsMagazine/form/TextAreaInput";
+import ItemTypeAttributesInput from "@/src/frontend/components/itemsMagazine/form/ItemTypeAttributesInput";
+import FormEnding from "@/src/frontend/components/itemsMagazine/form/FormEnding";
+import SubmitButton from "@/src/frontend/components/itemsMagazine/form/SubmitButton";
+import ToastNotification from "@/src/frontend/components/itemsMagazine/form/notification/ToastNotification";
+import SuccessModal from "@/src/frontend/components/itemsMagazine/form/modal/SuccessModal";
+
 
 
 const OrderForm = () => {

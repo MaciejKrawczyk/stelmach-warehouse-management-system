@@ -2,12 +2,13 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import MoveItemTile from "@/src/components/MoveItemTile";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
-import SubmitButton from "@/src/components/submitButton";
-import {PlaceNameById} from "@/src/utils/PlaceNameById";
-import {useParcels} from "@/src/hooks/useParcels";
-import {useItems} from "@/src/hooks/useItems";
+import {useItems} from "@/src/frontend/hooks/itemsMagazine/useItems";
+import {useParcels} from "@/src/frontend/hooks/itemsMagazine/useParcels";
+import {PlaceNameById} from "@/src/lib/utils/PlaceNameById";
+import MoveItemTile from "@/src/frontend/components/itemsMagazine/MoveItemTile";
+import SubmitButton from "@/src/frontend/components/itemsMagazine/submitButton";
+import SuccessModal from "@/src/frontend/components/itemsMagazine/form/modal/SuccessModal";
+
 
 const Page = () => {
     const [selectedItemSentCategory, setSelectedItemSentCategory] = useState<number | "">(""); // Initialize with an empty string

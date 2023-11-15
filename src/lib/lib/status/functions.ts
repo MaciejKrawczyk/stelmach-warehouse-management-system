@@ -1,5 +1,5 @@
-import {db} from '@/src/lib/db/db'
-import {IStatus} from "@/src/types/zod/Status";
+import {db} from "@/src/backend/db/db";
+import {IStatus} from "@/src/lib/types/zod/Status";
 
 
 export async function createStatus(status: IStatus) {

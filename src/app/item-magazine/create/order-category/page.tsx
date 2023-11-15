@@ -1,8 +1,9 @@
 'use client'
 
 import React from 'react';
-import Container from "@/src/components/Container";
-import OrderCategoryForm from "@/src/components/form/forms/OrderCategoryForm";
+import Container from "@/src/frontend/components/itemsMagazine/Container";
+import OrderCategoryForm from "@/src/frontend/components/itemsMagazine/form/forms/OrderCategoryForm";
+
 
 const MyForm = () => {
 

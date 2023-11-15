@@ -1,8 +1,9 @@
 'use client'
 
 import React, { useState } from 'react';
-import Container from "@/src/components/Container";
-import CompanyForm from "@/src/components/form/forms/CompanyForm";
+import Container from "@/src/frontend/components/itemsMagazine/Container";
+import CompanyForm from "@/src/frontend/components/itemsMagazine/form/forms/CompanyForm";
+
 
 const MyForm = () => {
 

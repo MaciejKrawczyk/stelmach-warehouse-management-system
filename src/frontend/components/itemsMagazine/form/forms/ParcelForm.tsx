@@ -6,17 +6,17 @@ import {zodResolver} from "@hookform/resolvers/zod";
 import Image from "next/image";
 import loadingSVG from "../../../../../../public/Dual Ring-1.5s-191px.svg";
 import axios from "axios";
-import {IParcel, ParcelSchema} from "@/lib/types/zod/Parcel";
-import {useCompanies} from "@/frontend/hooks/itemsMagazine/useCompanies";
-import TextInput from "@/frontend/components/itemsMagazine/form/TextInput";
-import InputDivider from "@/frontend/components/itemsMagazine/form/InputDivider";
-import ColorPickerInput from "@/frontend/components/itemsMagazine/form/ColorPickerInput";
-import SelectInput from "@/frontend/components/itemsMagazine/form/SelectInput";
-import TextAreaInput from "@/frontend/components/itemsMagazine/form/TextAreaInput";
-import FormEnding from "@/frontend/components/itemsMagazine/form/FormEnding";
-import SubmitButton from "@/frontend/components/itemsMagazine/form/SubmitButton";
-import ToastNotification from "@/frontend/components/itemsMagazine/form/notification/ToastNotification";
-import SuccessModal from "@/frontend/components/itemsMagazine/form/modal/SuccessModal";
+import {IParcel, ParcelSchema} from "@/src/lib/types/zod/Parcel";
+import {useCompanies} from "@/src/frontend/hooks/itemsMagazine/useCompanies";
+import TextInput from "@/src/frontend/components/itemsMagazine/form/TextInput";
+import InputDivider from "@/src/frontend/components/itemsMagazine/form/InputDivider";
+import ColorPickerInput from "@/src/frontend/components/itemsMagazine/form/ColorPickerInput";
+import SelectInput from "@/src/frontend/components/itemsMagazine/form/SelectInput";
+import TextAreaInput from "@/src/frontend/components/itemsMagazine/form/TextAreaInput";
+import FormEnding from "@/src/frontend/components/itemsMagazine/form/FormEnding";
+import SubmitButton from "@/src/frontend/components/itemsMagazine/form/SubmitButton";
+import ToastNotification from "@/src/frontend/components/itemsMagazine/form/notification/ToastNotification";
+import SuccessModal from "@/src/frontend/components/itemsMagazine/form/modal/SuccessModal";
 
 
 

@@ -1,8 +1,9 @@
 'use client'
 
 import React from 'react';
-import Container from "@/src/components/Container";
-import ShelfCategoryForm from "@/src/components/form/forms/ShelfCategoryForm";
+import ShelfCategoryForm from "@/src/frontend/components/itemsMagazine/form/forms/ShelfCategoryForm";
+import Container from "@/src/frontend/components/itemsMagazine/Container";
+
 
 const MyForm = () => {
 

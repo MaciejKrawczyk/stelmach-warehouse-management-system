@@ -1,8 +1,10 @@
 'use client'
 
 import React from 'react';
-import Container from "@/src/components/Container";
-import ParcelForm from "@/src/components/form/forms/ParcelForm";
+import Container from "@/src/frontend/components/itemsMagazine/Container";
+import ParcelForm from "@/src/frontend/components/itemsMagazine/form/forms/ParcelForm";
+
+
 
 const MyForm = () => {
 

@@ -2,19 +2,19 @@
 
 import {useParams} from "next/navigation";
 import React, {ChangeEvent, FormEvent, useState} from "react";
-import {Places} from "@/src/objects/Places";
 import axios from "axios";
 import Image from "next/image";
 import shelfSmall from "@/public/shelfSmall.svg";
 import shelfBig from "@/public/shelfBig.svg";
-import {Shelves} from "@/src/objects/Shelves";
-import SuccessModal from "@/src/components/form/modal/SuccessModal";
-import ToastNotification from "@/src/components/form/notification/ToastNotification";
-import SubmitButton from "@/src/components/submitButton";
-import {sortToolExisting} from "@/src/utils/sortToolExisting";
-import {PlaceNameById} from "@/src/utils/PlaceNameById";
-import {useShelfCategories} from "@/src/hooks/useShelfCategories";
-import {useItem} from "@/src/hooks/useItem";
+import {sortToolExisting} from "@/src/lib/utils/sortToolExisting";
+import {Shelves} from "@/src/lib/objects/Shelves";
+import {useShelfCategories} from "@/src/frontend/hooks/itemsMagazine/useShelfCategories";
+import {useItem} from "@/src/frontend/hooks/itemsMagazine/useItem";
+import {PlaceNameById} from "@/src/lib/utils/PlaceNameById";
+import SuccessModal from "@/src/frontend/components/itemsMagazine/form/modal/SuccessModal";
+import ToastNotification from "@/src/frontend/components/itemsMagazine/form/notification/ToastNotification";
+import {Places} from "@/src/lib/objects/Places";
+import SubmitButton from "@/src/frontend/components/itemsMagazine/submitButton";
 
 interface FormDataType {
     orderCategoryId: number | null;

@@ -10,7 +10,6 @@ import move from '../../../../public/move.svg'
 import shelf from '../../../../public/shelf.svg'
 import tool from '../../../../public/tool.svg'
 import type from '../../../../public/type.svg'
-
 import config from '../../../app/item-magazine/config.json'
 import Link from "next/link";
 

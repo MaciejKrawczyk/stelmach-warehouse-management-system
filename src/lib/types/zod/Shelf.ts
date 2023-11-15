@@ -1,5 +1,6 @@
 import { z } from 'zod'
-import { ItemSchema } from "@/src/types/zod/Item";
+import {ItemSchema} from "@/src/lib/types/zod/Item";
+
 
 // Use a forward reference for shelfSchema using z.lazy
 const LazyShelfSchema = z.lazy(() => shelfSchema);

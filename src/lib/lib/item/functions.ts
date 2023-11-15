@@ -1,5 +1,6 @@
-import { db } from '@/src/lib/db/db'
-import {IItem} from "@/src/types/zod/Item";
+import {IItem} from "@/src/lib/types/zod/Item";
+import {db} from "@/src/backend/db/db";
+
 
 export async function createItem(item: IItem) {
   

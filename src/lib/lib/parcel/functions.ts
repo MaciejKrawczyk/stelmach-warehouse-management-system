@@ -1,5 +1,5 @@
-import { db } from '@/src/lib/db/db'
-import {IParcel} from "@/src/types/zod/Parcel";
+import {db} from "@/src/backend/db/db";
+import {IParcel} from "@/src/lib/types/zod/Parcel";
 
 
 export async function createParcel(parcel: IParcel) {
