@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default async function Home() {
   
-  const data = await server.itemMagazine.todo.getTodos()
-  console.log(data)
+  // const data = await server.itemMagazine.todo.getTodos()
+  // console.log(data)
   
   return (
     <main className="flex justify-center items-center">
