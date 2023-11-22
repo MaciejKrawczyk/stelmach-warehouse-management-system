@@ -7,6 +7,20 @@ import shelfBig from "../../../../../../public/shelfBig.svg";
 import { FormProvider, useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 import axios from "axios";
+import {useCompanies} from "@/src/frontend/hooks/itemsMagazine/useCompanies";
+import {Places} from "@/src/lib/objects/Places";
+import {useShelfCategories} from "@/src/frontend/hooks/itemsMagazine/useShelfCategories";
+import {IItem, ItemSchema} from "@/src/lib/types/zod/Item";
+import {sortTool} from "@/src/lib/utils/sortToolShelf";
+import TextInput from "@/src/frontend/components/itemsMagazine/form/TextInput";
+import InputDivider from "@/src/frontend/components/itemsMagazine/form/InputDivider";
+import TextAreaInput from "@/src/frontend/components/itemsMagazine/form/TextAreaInput";
+import ItemTypeAttributesInput from "@/src/frontend/components/itemsMagazine/form/ItemTypeAttributesInput";
+import SelectInput from "@/src/frontend/components/itemsMagazine/form/SelectInput";
+import FormEnding from "@/src/frontend/components/itemsMagazine/form/FormEnding";
+import SubmitButton from "@/src/frontend/components/itemsMagazine/form/SubmitButton";
+import ToastNotification from "@/src/frontend/components/itemsMagazine/form/notification/ToastNotification";
+import SuccessModal from "@/src/frontend/components/itemsMagazine/form/modal/SuccessModal";
 
 
 const ItemForm = () => {
