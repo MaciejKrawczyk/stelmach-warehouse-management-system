@@ -1,7 +1,7 @@
 
 import {NextResponse} from "next/server";
 import {Request} from "next/dist/compiled/@edge-runtime/primitives";
-import {db} from "@/src/backend/model/db";
+import {db} from "@/prisma/db";
 
 
 export async function PUT(request: Request, {params}: Params) {

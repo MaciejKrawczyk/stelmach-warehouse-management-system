@@ -13,7 +13,7 @@
 
 
 
-import {db} from "@/src/backend/model/db";
+import {db} from "@/prisma/db";
 
 export async function POST(req: Request) {
 

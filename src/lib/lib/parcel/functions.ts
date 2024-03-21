@@ -1,4 +1,4 @@
-import {db} from "@/src/backend/model/db";
+import {db} from "@/prisma/db";
 import {IParcel} from "@/src/lib/types/zod/Parcel";
 
 

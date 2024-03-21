@@ -1,4 +1,4 @@
-import {db} from "@/src/backend/model/db";
+import {db} from "@/prisma/db";
 
 
 export async function GET(req: Request) {

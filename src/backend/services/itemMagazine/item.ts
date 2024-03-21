@@ -1,4 +1,4 @@
-import {db} from "@/src/backend/model/db";
+import {db} from "@/prisma/db";
 
 export function getItems() {
   return db.item.findMany({

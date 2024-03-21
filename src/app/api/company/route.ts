@@ -1,6 +1,6 @@
 
 import {z} from "zod";
-import {db} from "@/src/backend/model/db";
+import {db} from "@/prisma/db";
 import {CompanySchema} from "@/src/lib/types/zod/Company";
 
 

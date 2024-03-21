@@ -7,13 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "migrate:dev": "npx dotenv -e .env.local -- prisma migrate dev --schema=./src/backend/model/schema.prisma",
+    "migrate:dev": "npx dotenv -e .env.local -- prisma migrate dev ",
     "db:push": "npx dotenv -e .env.local -- prisma db push",
-    "migrate:reset": "npx dotenv -e .env.local -- prisma migrate reset --schema=./src/backend/model/schema.prisma",
-    "db:seed": "npx dotenv -e .env.local -- prisma db seed",
-    "prisma:generate": "npx dotenv -e .env.local -- prisma generate --schema=./src/backend/model/schema.prisma",
-    "prisma:studio": "npx dotenv -e .env.local -- prisma studio --schema=./src/backend/model/schema.prisma",
-    "production:build": "npx prisma generate --schema=./src/backend/model/schema.prisma && npx prisma migrate deploy && next build"
+    "migrate:reset": "npx dotenv -e .env.local -- prisma migrate reset ",
+    "db:seed": "npx dotenv -e .env.local -- node ./prisma/seed.mjs",
+    "prisma:generate": "npx dotenv -e .env.local -- prisma generate ",
+    "prisma:studio": "npx dotenv -e .env.local -- prisma studio a",
+    "production:build": "npx prisma generate && npx prisma migrate deploy && next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
@@ -34,7 +34,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.11.30",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
@@ -42,6 +42,7 @@
     "eslint-config-next": "14.0.2",
     "postcss": "^8",
     "prisma": "^5.6.0",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
   }
 }
