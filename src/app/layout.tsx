@@ -1,7 +1,6 @@
 import type {Metadata} from 'next'
 import { Merriweather_Sans } from 'next/font/google'
 import './globals.css'
-import Provider from "@/src/backend/trpc/Provider";
 import React from 'react'
 
 const font = Merriweather_Sans({subsets: ["latin"]})
@@ -19,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Provider>
           {children}
-        </Provider>
       </body>
     </html>
   )
