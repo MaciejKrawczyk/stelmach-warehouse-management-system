@@ -59,7 +59,9 @@ Designed & Developed by Maciej Krawczyk
 ---
 
 ### First Time Setup / After Database Reset
-- **Default Category Setup**: Create a default category at `/api/category`.
-- **Shelves Generation**: Automatically generate shelves at `/api/generateShelves`.
+```
+npm run db:seed
+npm run dev
+```
 
 </div>
