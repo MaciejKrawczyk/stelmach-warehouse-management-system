@@ -7,7 +7,7 @@ interface ItemExtended extends Item {
 function getPlacesItemsList(items: ItemExtended[], places: Place[]) {
     const placesItems = places.map(place => ({
         ...place,
-        items: items
+        item: items
         .filter(item => item.placeId === place.id)
         .map(({ place, ...restOfItem }) => restOfItem)
     }));

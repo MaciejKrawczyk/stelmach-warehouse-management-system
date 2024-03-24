@@ -1,4 +1,3 @@
-
 <div align="center">
 
 🚧 **Under Construction** 🚧
@@ -16,27 +15,43 @@ Welcome to our multi-functional application, featuring the sophisticated Item Ma
 
 - **Item Magazine**: Tailor the tool for specific needs by creating distinct item types, organized in cabinets and shelves, with automatic sorting and categorization for efficient management.
 
-- **PDF Opener for Special Orders**: Handle special orders with ease, thanks to our integrated PDF opener that streamlines the process.
-
 - **Extensive Functionality**: Beyond the magazine, the application offers a wide range of features to cater to our varied operational requirements.
 
-- **Technology Stack**: Built with Next.js 14 and Prisma, and utilizes tRPC with MVC (Model-View-Controller) pattern for robust, scalable, and efficient application architecture.
+- **Technology Stack**: // UPDATE
 
 - **Highly Configurable**: Adaptable to changing needs and requirements, ensuring seamless integration into our workflow.
 
 - **Design & User Experience**: Every aspect is designed with attention to detail, ensuring a user-friendly and visually appealing interface.
 
+<div align="center">
+  <img src="examples/example1.png" alt="Example 1">
+  <img src="examples/example2.png" alt="Example 2">
+  <img src="examples/example3.png" alt="Example 3">
+  <img src="examples/example4.png" alt="Example 4">
+</div>
+
 ## Getting Started 🚀
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/MaciejKrawczyk/stelmach-power-tools.git
+   git clone https://github.com/MaciejKrawczyk/stelmach-warehouse-management-system.git
    ```
 
 2. **Install dependencies and set up**:
    ```bash
-   cd stelmach-power-tools
+   cd stelmach-warehouse-management-system
+   ```
+   ```bash
+   cat > .env.local # add variables as mentioned in .env.example 
+   ```
+   ```
    npm install
+   ```
+   ```
+   npm run migrate:dev
+   ```
+   ```
+   npm run db:seed
    ```
 
 3. **Run the application**:
@@ -57,12 +72,5 @@ Licensed under the Apache License, Version 2.0.
 Designed & Developed by Maciej Krawczyk
 
 ---
-
-### First Time Setup / After Database Reset
-```
-npm run migrate:dev
-npm run db:seed
-npm run dev
-```
 
 </div>

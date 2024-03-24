@@ -5,14 +5,16 @@ import loadingSVG from "../../../public/Dual Ring-1.5s-191px.svg";
 import {useItems} from "@/src/frontend/hooks/itemsMagazine/useItems";
 import {usePlaces} from "@/src/frontend/hooks/itemsMagazine/usePlaces";
 import getPlacesItemsList from "@/src/lib/utils/getPlacesItemsList";
-import SummaryDetailsItemsContainer from "@/src/frontend/components/itemsMagazine/SummaryDetailsItemsContainer";
+import Container from '@/src/frontend/components/itemsMagazine/Container'
+import PlacesItemsDetailsSummaryList from "@/src/frontend/components/itemsMagazine/PlacesItemsDetailsSummaryList";
+import {useMemo} from "react";
 
 export default function Home() {
 
     const {items, loading: loadingItems, error: errorItems} = useItems()
     const {places, loading: loadingPlaces, error: errorPlaces} = usePlaces()
 
-    const placeItemsList = getPlacesItemsList(items, places)
+    const placeItemsList = useMemo(() => getPlacesItemsList(items, places), [items, places]);
 
     if (loadingItems && loadingPlaces) {
         return (
@@ -26,22 +28,9 @@ export default function Home() {
 
     return (
         <div className='flex justify-center'>
-            <main className='w-10/12 h-auto mb-28'>
-                <h1 className='font-semibold text-3xl my-10 mx-auto'>Przegląd</h1>
-
-                {placeItemsList.map((placeWithItems, index) => {
-
-                    return (
-                        <SummaryDetailsItemsContainer
-                            items={placeWithItems.items}
-                            placeId={placeWithItems.id}
-                            title={placeWithItems.name}
-                            key={index}
-                        />
-                    )
-                })}
-
-            </main>
+            <Container title={'Przegląd'}>
+                <PlacesItemsDetailsSummaryList placeItemsList={placeItemsList}/>
+            </Container>
         </div>
     );
 }

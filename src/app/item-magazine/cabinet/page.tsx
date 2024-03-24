@@ -124,11 +124,12 @@ const Page: React.FC = () => {
         }
     }, [showModal, modalState]);
 
-    const handleShelfClick = (shelfId: string) => {
-        if (!clickedShelves.includes(shelfId)) {
-            setClickedShelves(prev => [...prev, shelfId]);
+    const handleShelfClick = (shelfId: number) => {
+        const shelfIdString = shelfId.toString()
+        if (!clickedShelves.includes(shelfIdString)) {
+            setClickedShelves(prev => [...prev, shelfIdString]);
         } else {
-            setClickedShelves(prev => prev.filter(id => id !== shelfId));
+            setClickedShelves(prev => prev.filter(id => id !== shelfIdString));
         }
     }
 
