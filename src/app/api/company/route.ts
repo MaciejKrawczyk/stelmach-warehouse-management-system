@@ -18,7 +18,6 @@ export async function POST(req: Request): Promise<Response> {
     try {
         const body = await req.json();
 
-        // Validate input using Zod
         const validatedData = CompanySchema.parse(body);
 
         const companyExists = await db.company.findFirst({

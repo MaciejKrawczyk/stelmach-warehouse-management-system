@@ -27,7 +27,7 @@ export default function Home() {
     if (errorItems || errorPlaces) return <div>Error loading data</div>;
 
     return (
-        <div className='flex justify-center'>
+        <div>
             <Container title={'Przegląd'}>
                 <PlacesItemsDetailsSummaryList placeItemsList={placeItemsList}/>
             </Container>
