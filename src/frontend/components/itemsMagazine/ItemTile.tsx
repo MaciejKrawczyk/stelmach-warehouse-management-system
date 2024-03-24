@@ -40,7 +40,7 @@ const ItemTile = ({placeId, itemType, name, company, date, shelfSize, shelfId, i
     }, []);
 
     const handleRedirect = () => {
-        router.push(`/${itemId}`)
+        router.push(`/item-magazine/${itemId}`)
     }
 
 

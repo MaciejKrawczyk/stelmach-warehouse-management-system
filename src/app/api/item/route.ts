@@ -142,7 +142,11 @@ export async function POST(req: Request) {
                             id: shelfId
                         }
                     },
-                    placeId: Number(placeId),
+                    place: {
+                        connect: {
+                            id: placeId
+                        }
+                    },
                     shelfSize: shelfSize,
                     isDeleted: false,
                     isOrder: isOrder,
@@ -181,6 +185,7 @@ export async function POST(req: Request) {
         return new Response(JSON.stringify(object))
 
     } catch (error) {
-        console.error(error)
+        console.error(error);
+        return new Response('Failed to create item', { status: 500 });
     }
 }
