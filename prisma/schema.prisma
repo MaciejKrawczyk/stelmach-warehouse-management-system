@@ -9,6 +9,13 @@ datasource db {
   // relationMode = "prisma"
 }
 
+model Place {
+  id       Int    @id @default(autoincrement())
+  name     String
+  workname String
+  Item     Item[]
+}
+
 model ShelfCategory {
   id    Int     @id @default(autoincrement())
   name  String  @unique
@@ -57,7 +64,8 @@ model Item {
   id              Int              @id @default(autoincrement())
   name            String
   description     String
-  placeId         Int
+  placeId         Int?
+  place           Place?           @relation(fields: [placeId], references: [id])
   shelfId         Int?
   shelf           Shelf?           @relation(fields: [shelfId], references: [id])
   shelfSize       String?

@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 
 
-export const useItems = () => {
-    const [items, setItems] = useState<IDbResponseTypes[]>([]);
+export const usePlaces = () => {
+    const [places, setPlaces] = useState<IDbResponseTypes[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
-    const fetchItems = async (): Promise<void> => {
+    const fetchPlaces = async (): Promise<void> => {
         try {
             setLoading(true);  // Start by setting loading to true each time fetchItems is called.
-            const response = await fetch('/api/item', {
+            const response = await fetch('/api/place', {
                 method: "get",
                 cache: "no-cache",
                 headers: {
@@ -18,7 +18,7 @@ export const useItems = () => {
             });
             if (response.ok) {
                 const items = await response.json()
-                setItems(items);
+                setPlaces(items);
             }
         } catch (err: any) {
             setError(err.message || "Error fetching items");
@@ -28,14 +28,14 @@ export const useItems = () => {
     };
 
     useEffect(() => {
-        fetchItems();
+        fetchPlaces();
     }, []);
 
 
     const refetch = () => {
         setError(null);
-        fetchItems();
+        fetchPlaces();
     };
 
-    return { items, loading, error, refetch };
+    return { places, loading, error, refetch };
 };

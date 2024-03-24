@@ -60,6 +60,7 @@ Designed & Developed by Maciej Krawczyk
 
 ### First Time Setup / After Database Reset
 ```
+npm run migrate:dev
 npm run db:seed
 npm run dev
 ```
